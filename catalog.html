@@ -48,36 +48,53 @@
   </ul>
   <section class="site-filter">
     <div class="filter-menu">
-      <span>Фильтр:</span>
-      <div class="filter-range">
-        Стоимость:
-        <input type="range" name="points" min="0" max="10">
-      </div>
-      <div class="filter-color">
-        Цвет
-        <input type="checkbox" id="black" name="black" checked>
-        <label for="black">Черный</label>
+      <h2>Фильтр:</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <div class="filter-range">
+          <h3>Стоимость</h3>
+          <input type="range" name="points" min="0" max="10">
+        </div>
+        <div class="filter-color">
+          <h3>Цвет</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="black" name="black" checked>
+              <label for="black">Черный</label>
+            </li>
+            <li>
+              <input type="checkbox" id="white" name="white">
+              <label for="white">Белый</label>
+            </li>
 
-        <input type="checkbox" id="white" name="white">
-        <label for="white">Белый</label>
-
-        <input type="checkbox" id="blue" name="blue" checked>
-        <label for="blue">Синий</label>
-
-        <input type="checkbox" id="red" name="red" checked>
-        <label for="red">Красный</label>
-
-        <input type="checkbox" id="pink" name="pink">
-        <label for="pink">Розовый</label>
-      </div>
-      <div class="filter-bluetooth">
-        Bluetooth
-        <input type="radio" id="yes" name="yes" checked>
-        <label for="yes">Есть</label>
-        <input type="radio" id="no" name="no">
-        <label for="no">Нет</label>
-      </div>
-      <button>Показать</button>
+            <li>
+              <input type="checkbox" id="blue" name="blue" checked>
+              <label for="blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" id="red" name="red" checked>
+              <label for="red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" id="pink" name="pink">
+              <label for="pink">Розовый</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-bluetooth">
+          <h3>Bluetooth</h3>
+          <ul>
+            <li>
+              <input type="radio" id="yes" name="bluetooth-chose" checked>
+              <label for="yes">Есть</label>
+            </li>
+            <li>
+              <input type="radio" id="no" name="bluetooth-chose">
+              <label for="no">Нет</label>
+            </li>
+          </ul>
+        </div>
+        <button>Показать</button>
+      </form>
     </div>
     <div class="filter-items">
       <span> Сортировка:</span>

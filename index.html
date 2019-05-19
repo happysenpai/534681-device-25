@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
   <header class="site-header">
@@ -140,6 +141,7 @@
   </div>
 </section>
 <section class="carousel">
+  <h2 class="visually-hidden">Компании партнеры</h2>
  <div class="carousel-item">
   <img src="img/credit_inactive-1.png" width="260" height="100" alt="dji">
 </div>
@@ -167,13 +169,40 @@
 <section class="contacts">
   <h2>Контакты</h2>
   <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  <img src="http://placehold.it/560x222" width="560" height="222" alt="Карта"><br>
+  <img src="img/map.png" width="560" height="222" alt="Адрес магазина ул. Строителей, 15, Москва, 119311"><br>
   <a href="#">Напишите нам</a>
+</section>
+<section class="popup-write-us">
+  <h2 class="visually-hidden">Написать нам</h2>
+  <form method="post" action="https://echo.htmlacademy.ru">
+    <p>
+      <label for="user-name">Ваше имя:</label><br>
+      <input id="user-name" type="text"
+      name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="user-email">Ваш e-mail:</label><br>
+      <input id="user-email" type="text"
+      name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-msg">Текст письма:</label><br>
+      <textarea id="user-msg" rows="10" cols="45" name="msg" placeholder="В свободной форме"></textarea>
+    </p>
+    <button type="submit">Отправить</button>
+    <button type="button" aria-label="Закрыть форму">X</button>
+
+  </form>
+</section>
+<section class="popup-map">
+   <h2 class="visually-hidden">Карта проезад</h2>
+<img src="img/popup-map.png" width="960" height="559" alt="Карта">
+<button type="button" aria-label="Закрыть форму">X</button>
 </section>
 </main>
 <footer class="site-footer">
   <div class="footer-column-1">
-    <img src="http://placehold.it/163x35" width="163" height="35" alt="Лого"><br>
+    <img src="http://placehold.it/163x35" width="163" height="35" alt="Адрес магазина ул. Строителей, 15, Москва, 119311"><br>
     <p>г. Москва, ул. Строителей, 15</p>
   </div>
   <div class="footer-column-2">
