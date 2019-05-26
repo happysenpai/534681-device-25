@@ -2,29 +2,29 @@
  font-family: "Open Sans";
  font-style: normal;
  font-weight: 400;
- src: url("/fonts/opensans.woff2") format("woff2"),
- url("/fonts/opensans.woff") format("woff");
+ src: url("../fonts/opensans.woff2") format("woff2"),
+ url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
  font-family: "Open Sans - Light";
  font-style: normal;
  font-weight: 300;
- src: url("/fonts/opensanslight.woff2") format("woff2"),
- url("/fonts/opensanslight.woff") format("woff");
+ src: url("../fonts/opensanslight.woff2") format("woff2"),
+ url("../fonts/opensanslight.woff") format("woff");
 }
 @font-face {
  font-family: "Gilroy - Extra Bold";
  font-style: normal;
  font-weight: 400;
- src: url("/fonts/opensans.woff2") format("woff2"),
- url("/fonts/opensans.woff") format("woff");
+ src: url("../fonts/opensans.woff2") format("woff2"),
+ url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
  font-family: "Gilroy";
  font-style: normal;
  font-weight: 300;
- src: url("/fonts/gilroylight.woff2") format("woff2"),
- url("/fonts/gilroylight.woff") format("woff");
+ src: url("../fonts/gilroylight.woff2") format("woff2"),
+ url("../fonts/gilroylight.woff") format("woff");
 }
 
 body{
@@ -33,6 +33,7 @@ body{
   font-weight: 300;
   line-height: 30px;
   background-color: #ffffff;
+  color: #000000;
 
 }
 a {
