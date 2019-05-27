@@ -44,6 +44,7 @@ a:hover {
 }
 a:active {
   opacity: 0.3;
+  color: #000000;
 
 }
 a:visited {
