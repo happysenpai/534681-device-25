@@ -6,21 +6,21 @@
  url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
- font-family: "Open Sans - Light";
+ font-family: "Open Sans";
  font-style: normal;
  font-weight: 300;
  src: url("../fonts/opensanslight.woff2") format("woff2"),
  url("../fonts/opensanslight.woff") format("woff");
 }
 @font-face {
- font-family: "Gilroy - Extra Bold";
+ font-family: Gilroy;
  font-style: normal;
- font-weight: 400;
+ font-weight: 800;
  src: url("../fonts/opensans.woff2") format("woff2"),
  url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
- font-family: "Gilroy";
+ font-family: Gilroy;
  font-style: normal;
  font-weight: 300;
  src: url("../fonts/gilroylight.woff2") format("woff2"),
@@ -28,7 +28,7 @@
 }
 
 body{
-  font-family: "Gilroy", "Gilroy - Extra Bold", "Open Sans", "Open Sans - Light", Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -44,8 +44,12 @@ a:hover {
 }
 a:active {
   opacity: 0.3;
-}
 
+}
+a:visited {
+color: #000000;
+
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -61,8 +65,8 @@ a:active {
   display: none;
 }
 .site-header {
-  background-color: #f0c52e;
-  opacity: 0.5;
+  background-color: #f7e296;
+
 }
 .services {
   background-color: #e5e5e5;
