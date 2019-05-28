@@ -16,8 +16,8 @@
  font-family: Gilroy;
  font-style: normal;
  font-weight: 800;
- src: url("../fonts/opensans.woff2") format("woff2"),
- url("../fonts/opensans.woff") format("woff");
+ src: url("../fonts/gilroy.woff2") format("woff2"),
+ url("../fonts/gilroy.woff") format("woff");
 }
 @font-face {
  font-family: Gilroy;
