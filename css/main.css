@@ -154,6 +154,8 @@ margin-right: 41px;
   background-color: #464646;
 }
 .site-footer{
+  padding-top: 65px;
+  padding-bottom: 65px;
   display: flex;
   justify-content: space-between;
 }
