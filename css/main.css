@@ -28,10 +28,11 @@
 }
 
 body{
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  letter-spacing: 0.15px;
   background-color: #ffffff;
   color: #000000;
   margin-top: 40px;
@@ -75,15 +76,14 @@ a:visited {
 .header-sort-1 {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 60px;
+  width: 500px;
+  padding-left: 60px;
   height: 186px;
 }
 .header-sort-2 {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  margin-right: 60px;
+  width: 560px;
   align-items: baseline;
   flex-wrap: wrap;
   height: 186px;
@@ -92,26 +92,117 @@ a:visited {
 .header-sort-2 ul{
  list-style: none;
 }
-.header-sort-2 ul li {
-  display: inline-block;
-  margin-right: 41px;
+.head-navigation{
+font-family: Gilroy;
+font-size: 18px;
+font-weight: 800;
+line-height: 24px;
+text-transform: uppercase;
+letter-spacing: 3.6px;
+margin-top: -1px;
+}
+.head-navigation ul li {
+  display: inline-block;  
+}
+.head-navigation ul li:first-child{
+  margin-right: 25px;
+}
+.head-navigation ul li:last-child{
+ margin-left: 101px;
+}
+.user-id{
+  margin-right: 17px;
+}
+
+.no-login{
+  opacity: 0.3;
 }
 .header-height {
   height: 299px;
 }
 .main-header-logo{
   margin-top: -17px;
+      margin-bottom: 11px;
 }
 .user-navigation{
-  /* margin-right: 200px; */
+    margin-right: 63px;
+    width: 225px;
+  }
+.user-navigation li{
+  display: inline-block;
+}
+.user-navigation::before{
+  content: url(../img/user.svg);
+  margin-right: 9px;
+}
+.user-compare::before{
+  content: url(../img/compare.svg);
+  margin-right: 5px;
+  
 }
 .user-compare{
-  margin-right: 41px;
+    margin-right: 41px;
+  }
+.user-cart::before{
+  content: url(../img/cart.svg);
+  margin-right: 5px;  
 }
-.user-cart{
+
+.site-search input[type="search"]{
+  width: 355px;
+  background-color: #f7e296;
+  border:none;
+  font-size: 15px;
+font-weight: 300;
+line-height: 30px;
+letter-spacing: 0.15px;
 
 }
-.head-navigation{
+.header-sort-1 a{
+  font-family: Gilroy;
+font-size: 18px;
+font-weight: 800;
+line-height: 24px;
+text-transform: uppercase;
+letter-spacing: 3.6px;
+}
+.site-search form{
+     display: flex;
+     margin-bottom: 27px;
+}
+.site-search input[type="search"] {
+   border-bottom: 2px solid #000000;
+   color:#000000;
+}
+.site-search form::before{
+  content: url(../img/search.svg);
+  width:16px;  
+  padding-right: 21px;
+  border-bottom: 2px solid #000000;  
+  align-self: flex-end;
+      padding-bottom: 5px;
+
+
+}
+.site-search input[type="search"]:hover {
+  height: : 85px;
+  opacity: 0.6;
+}
+.site-search button[type="submit"]{
+width: 85px;
+height: 49px;
+border: 2px solid #000000;
+background-color: #f7e296;
+}
+.site-search button[type="submit"]:hover{
+background-color: #000000;
+color:#ffffff;
+}
+.site-search button[type="submit"]:focus{
+opacity: 0.3;
+}
+.site-search input[type="search"]:focus + button[type="submit"]{
+display: inline-block;
 
 }
 /* Header end*/
@@ -125,14 +216,37 @@ a:visited {
   margin-left: 90px;
   margin-right: 90px;
 }
+.button-detailed{
+font-family: Gilroy;
+font-size: 18px;
+font-weight: 800;
+line-height: 24px;
+text-transform: uppercase;
+letter-spacing: 2.15px;
+}
+.button-bg{  
+  background-color: #f0c52e;
+  border: 0;
+  transform: scaleY(0.5);
+}
 /* Slider end*/
 .popular,
 .info{
   display: flex;
 }
-.parters{
+.partners{
   display: flex;
   justify-content: space-between;
+}
+.partners-item img{
+-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+.partners-item img:hover{
+-webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
 }
 .breadcrumbs-wraper {
   padding-left: 60px;
@@ -236,6 +350,22 @@ margin-right: 280px;
   padding-bottom: 65px;
   display: flex;
   justify-content: space-between;
+  color:#ffffff;
+}
+.site-footer a{
+  color:#ffffff;
+}
+.site-footer ul li{
+  display: inline-block;
+}
+.facebook::after{
+  content: url(../img/fb.svg);
+}
+.instagram::after{
+  content: url(../img/instagram.svg);
+}
+.twitter::after{
+  content: url(../img/twitter.svg);
 }
 .popup-write-us,
 .popup-map {
