@@ -19,6 +19,7 @@
     </form>
   </div>
   <a href="catalog.html" class="catalog">КАТАЛОГ ТОВАРОВ</a>
+  <div class="close"></div>
 </div>
 <div class="header-sort-2">
   <ul class="user-navigation">
@@ -44,10 +45,18 @@
 <main class="container">
   <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE!</h1>
   <section class="slider auto-width">
-    <div class="slider-item">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+    <div class="slider-item ">
       <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-      <div class="slider-info">
-        <h2>Делай селфи,как<br> Бен Стиллер!</h2>
+      <div class="slider-info first-slide">
+        <h2>Делай селфи,<br>как Бен Стиллер!</h2>
         <p>Самая длинная палка для селфи доступна в нашем магазине.
         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <div class="button-detailed button-bg">
@@ -67,9 +76,9 @@
         </table>
       </div>
     </div>
-    <div class="slider-item visually-hidden">
-      <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-      <div class="slider-info">
+    <div class="slider-item ">
+      <img class="slide-image-2" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+      <div class="slider-info second-slide">
         <h2>Худеем<br> правильно!</h2>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
         <div class="button-detailed button-bg">
@@ -85,9 +94,9 @@
         </table class="slider-table" >
       </div>
     </div>
-    <div class="slider-item visually-hidden">
-      <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-      <div class="slider-info">
+    <div class="slider-item">
+      <img class="slide-image-3" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+      <div class="slider-info third-slide">
         <h2>Порхает как бабочка,<br>жалит как пчела!</h2>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
         мощным лазером, замаскированным под стандартную камеру.</p>
@@ -141,21 +150,27 @@
 </section>
 <section class="services-wraper">
   <div class="services auto-width">
-    <div class="services-slide">
-      <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-    </div>
-    <div class="services-slide">
-      <h2>Гарантия</h2>
-      <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-      Товар, не дом, конечно же.</p>
-    </div>
-    <div class="services-slide">
-      <h2>Кредит</h2>
-      <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-      условия кредита. Выгодные для нашего банка, разумеется.</p>
-    </div>
+<input type="radio" id="btn-4" name="toggle" checked>
+<input type="radio" id="btn-5" name="toggle">
+<input type="radio" id="btn-6" name="toggle">
+<div class="slider-controls">
+ <label class="button-detailed button-bg" for="btn-4">Доставка</label>
+ <label class="button-detailed button-bg" for="btn-5">Гарантия</label>
+ <label class="button-detailed button-bg" for="btn-6">Кредит</label>
   </div>
+  <div class="services-slide services-credit">
+    <h2>Кредит</h2>
+    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+  </div>
+  <div class="services-slide services-delivery">
+   <h2>Доставка</h2>
+   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+ </div>
+ <div class="services-slide services-warranty">
+   <h2>Гарантия</h2>
+   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+ </div>
+</div>
 </section>
 <section class="partners auto-width">
   <h2 class="visually-hidden">Компании партнеры</h2>
@@ -236,29 +251,42 @@
 <section class="popup-write-us">
   <h2 class="visually-hidden">Написать нам</h2>
   <form method="post" action="https://echo.htmlacademy.ru">
-    <p>
+    <p class="name-field">
       <label for="user-name">Ваше имя:</label><br>
-      <input id="user-name" type="text"
-      name="name" placeholder="Имя Фамилия">
+      <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
     </p>
-    <p>
+    <p class="email-field">
       <label for="user-email">Ваш e-mail:</label><br>
-      <input id="user-email" type="text"
-      name="email" placeholder="email@example.com">
+      <input id="user-email" type="text" name="email" placeholder="email@example.com">
     </p>
-    <p>
+    <p class="textarea-field">
       <label for="user-msg">Текст письма:</label><br>
-      <textarea id="user-msg" rows="10" cols="45" name="msg" placeholder="В свободной форме"></textarea>
+      <textarea id="user-msg" rows="6" cols="92" name="msg" placeholder="В свободной форме"></textarea>
     </p>
-    <button type="submit">Отправить</button>
-    <button type="button" aria-label="Закрыть форму">X</button>
+    <button class="button-send button-detailed button-bg" type="submit">Отправить</button>
+    <button class="button-close" type="button" aria-label="Закрыть форму">X</button>
 
   </form>
 </section>
 <section class="popup-map">
  <h2 class="visually-hidden">Карта проезад</h2>
- <img src="img/popup-map.png" width="960" height="559" alt="Адрес магазина ул. Строителей, 15, Москва, 119311">
- <button type="button" aria-label="Закрыть форму">X</button>
+ <iframe width="960" height="559" src="https://maps.google.com/maps?width=560&amp;height=222&amp;hl=ru&amp;q=%D1%83%D0%BB.%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%2015%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20119311+(%D0%BA%D0%B0%D1%80%D1%82%D0%B0)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+ <button class="button-close" type="button" aria-label="Закрыть форму">X</button>
+</section>
+<section class="catalog-dropdown auto-width">
+  <ul>
+    <li><a href="catalog.html">Виртуальная реальность</a></li>
+    <li><a href="catalog.html">Моноподы для селфи</a></li>
+    <li><a href="catalog.html">Экшн-камеры</a></li>
+  </ul>
+  <ul>
+    <li><a href="catalog.html">Фитнес-браслеты</a></li>
+    <li><a href="catalog.html">Умные часы</a></li>
+  </ul>
+  <ul>
+    <li><a href="catalog.html">Квадрокоптеры</a></li>
+  </ul>
 </section>
 </body>
 </html>
