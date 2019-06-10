@@ -702,9 +702,80 @@ a:visited {
 
 }
 .filter-item{
+  position: relative;
   width: 361px;
 }
+.filter-item:hover::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 360px;
+  height: 380px;
+  background-color: #eeeeee;
+  opacity: 0.7;
+  z-index: 0;
+}
+.filter-item:hover .hover-info{
+  display: block;
+}
+.hover-info{
+  display: none;
+  position: absolute;
+  width: 360px;
+  height: 380px;
+  top: 0;
+  left:0;
+  z-index: 1;
+}
+.hover-info a:first-child{
+  position: absolute;
+  left: 80px;
+  top: 171px;
+  z-index: 1;
+}
+.hover-info a:first-child span{
+  margin-left: 43px;
 
+}
+.hover-info .button-bg{
+  padding-top: 8px;
+}
+.hover-info .button-bg:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.hover-info .button-bg:active span{
+  opacity: 0.3;
+}
+.hover-info a:last-child{
+  position: absolute;
+  left: 108px;
+  top: 218px;
+  opacity: 0.5;
+  z-index: 1;
+}
+.hover-info a:last-child:hover{
+  opacity: 1;
+}
+.hover-info a:last-child:active{
+  opacity: 0.2;
+}
+.filter-item .item-title a{
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+.filter-item .item-price{
+  color: #464646;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
 /* pagination start */
 .pagination{
   display: flex;

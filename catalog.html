@@ -30,20 +30,19 @@
       <a href="#">Выйти</a>
     </li>
   </ul>
-</ul>
-<span class="user-compare">
-  <a href="#">Сравнить</a>
-</span>
-<span class="user-cart">
-  <a href="#">Корзина</a>
-</span>
-<nav class="head-navigation">
-  <ul>
-    <li><a href="#">ДОСТАВКА</a></li>
-    <li><a href="#">ГАРАНТИЯ</a></li>
-    <li><a href="#">КОНТАКТЫ</a></li>
-  </ul>
-</nav>
+  <span class="user-compare">
+    <a href="#">Сравнить</a>
+  </span>
+  <span class="user-cart">
+    <a href="#">Корзина</a>
+  </span>
+  <nav class="head-navigation">
+    <ul>
+      <li><a href="#">ДОСТАВКА</a></li>
+      <li><a href="#">ГАРАНТИЯ</a></li>
+      <li><a href="#">КОНТАКТЫ</a></li>
+    </ul>
+  </nav>
 </div>
 </header>
 
@@ -57,145 +56,185 @@
     </ul>
   </div>
   <section class="site-wraper">
-    <main class="site-filter  auto-width">
-    <div class="filter-menu">
-      <h2>Фильтр:</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <div class="filter-range">
-          <h3>Стоимость</h3>
-          <input type="range" name="points" min="0" max="10">
-        </div>
-        <div class="filter-color">
-          <h3>Цвет</h3>
-          <ul>
-            <li>
-              <input type="checkbox" id="black" name="black" checked>
-              <label for="black">Черный</label>
-            </li>
-            <li>
-              <input type="checkbox" id="white" name="white">
-              <label for="white">Белый</label>
-            </li>
+    <div class="site-filter  auto-width">
+      <div class="filter-menu">
+        <h2>Фильтр:</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <div class="filter-range">
+            <h3>Стоимость</h3>
+            <input type="range" name="points" min="0" max="10">
+          </div>
+          <div class="filter-color">
+            <h3>Цвет</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="black" name="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" id="white" name="white">
+                <label for="white">Белый</label>
+              </li>
 
-            <li>
-              <input type="checkbox" id="blue" name="blue" checked>
-              <label for="blue">Синий</label>
-            </li>
-            <li>
-              <input type="checkbox" id="red" name="red" checked>
-              <label for="red">Красный</label>
-            </li>
-            <li>
-              <input type="checkbox" id="pink" name="pink">
-              <label for="pink">Розовый</label>
-            </li>
-          </ul>
-        </div>
-        <div class="filter-bluetooth">
-          <h3>Bluetooth</h3>
-          <ul>
-            <li>
-              <input type="radio" id="yes" name="bluetooth-chose" checked>
-              <label for="yes">Есть</label>
-            </li>
-            <li>
-              <input type="radio" id="no" name="bluetooth-chose">
-              <label for="no">Нет</label>
-            </li>
-          </ul>
-        </div>
-        <button class="button-detailed">Показать</button>
-      </form>
-    </div>
-    <div class="filter-items">
-      <div class="filter-sort-wraper">
-        <span> Сортировка:</span>
-        <ul>
-          <li class="filter-active"><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По популярности</a></li>
-        </ul>
-        <div class="arrow-group">
-          <a href="#">&#9650;</a>
-          <a href="#">&#9660;</a>
-        </div>
+              <li>
+                <input type="checkbox" id="blue" name="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" id="red" name="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" id="pink" name="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-bluetooth">
+            <h3>Bluetooth</h3>
+            <ul>
+              <li>
+                <input type="radio" id="yes" name="bluetooth-chose" checked>
+                <label for="yes">Есть</label>
+              </li>
+              <li>
+                <input type="radio" id="no" name="bluetooth-chose">
+                <label for="no">Нет</label>
+              </li>
+            </ul>
+          </div>
+          <button class="button-detailed">Показать</button>
+        </form>
       </div>
-      <div class="item-group">
+      <div class="filter-items">
+        <div class="filter-sort-wraper">
+          <span> Сортировка:</span>
+          <ul>
+            <li class="filter-active"><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+          </ul>
+          <div class="arrow-group">
+            <a href="#">&#9650;</a>
+            <a href="#">&#9660;</a>
+          </div>
+        </div>
+        <div class="item-group">
+          <div class="filter-item">
+           <img src="img/catlog-item-1.png" width="360" height="380" alt="Картинка товара">
+           <div class="hover-info">
+             <a class="button-detailed button-bg">
+              <span>В корзину</span>
+            </a>
+            <a href="#">
+              <span>Добавить к сравнению</span>
+            </a>
+          </div>
+          <a class="item-title" href="#">
+            <h2>Любительская селфи-палка</h2>
+          </a>
+          <span class="item-price">500 руб.</span>
+        </div>
         <div class="filter-item">
-         <img src="img/catlog-item-1.png" width="360" height="380" alt="Картинка товара">
-         <a href="#"><h2 class="item-title">Любительская селфи-палка</h2></a>
-         <span class="item-price">500 руб.</span>
-       </div>
-       <div class="filter-item">
          <img src="img/catlog-item-2.png" width="360" height="380" alt="Картинка товара">
-         <a href="#"><h2 class="item-title">Профессиональная селфи-палка </h2></a>
-         <span class="item-price">1500 руб.</span>
-       </div>
-        <div class="filter-item">
-         <img src="img/catlog-item-3.png" width="360" height="380" alt="Картинка товара">
-         <a href="#"><h2 class="item-title">Непотопляемая селфи-палка</h2></a>
-         <span class="item-price">2500 руб.</span>
-       </div>
-       <div class="filter-item">
-         <img src="img/catlog-item-4.png" width="360" height="380" alt="Картинка товара">
-         <a href="#"><h2 class="item-title">Селфи-палка «Следуй за мной»</h2></a>
-         <span class="item-price">4900 руб.</span>
-       </div>
-     </div>
-     <div class="pagination">
-      <ul>
-        <li><a class="pagination-back" href="#">назад</a></li>
-        <li><a href="#">1</a></li>
-        <li><a class="curent-page" href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a class="pagination-forward" href="#">вперед</a></li>
-      </ul>
+         <div class="hover-info">
+           <a class="button-detailed button-bg">
+            <span>В корзину</span>
+          </a>
+          <a href="#">
+            <span>Добавить к сравнению</span>
+          </a>
+        </div>
+        <a class="item-title" href="#">
+          <h2>Профессиональная селфи-палка </h2>
+        </a>
+        <span class="item-price">1500 руб.</span>
+      </div>
+      <div class="filter-item">
+       <img src="img/catlog-item-3.png" width="360" height="380" alt="Картинка товара">
+       <div class="hover-info">
+         <a class="button-detailed button-bg">
+          <span>В корзину</span>
+        </a>
+        <a href="#">
+          <span>Добавить к сравнению</span>
+        </a>
+      </div>
+      <a class="item-title" href="#">
+        <h2>Непотопляемая селфи-палка</h2>
+      </a>
+      <span class="item-price">2500 руб.</span>
     </div>
+    <div class="filter-item">
+     <img src="img/catlog-item-4.png" width="360" height="380" alt="Картинка товара">
+     <div class="hover-info">
+       <a class="button-detailed button-bg">
+        <span>В корзину</span>
+      </a>
+      <a href="#">
+        <span>Добавить к сравнению</span>
+      </a>
+    </div>
+    <a class="item-title" href="#">
+      <h2>Селфи-палка «Следуй за мной»</h2>
+    </a>
+    <span class="item-price">4900 руб.</span>
   </div>
-</main>
+</div>
+<div class="pagination">
+  <ul>
+    <li><a class="pagination-back" href="#">назад</a></li>
+    <li><a href="#">1</a></li>
+    <li><a class="curent-page" href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a class="pagination-forward" href="#">вперед</a></li>
+  </ul>
+</div>
+</div>
+</div>
 </section>
 </main>
 <footer class="footer-wraper">
   <div class="site-footer auto-width">
     <div class="footer-column-1">
       <a href="index.html">
-      <img class="main-footer-logo" src="img/footer-logo.png" width="163" height="35" alt="Магазин гаджетов DEVICE"></a>
-      <p>г. Москва, ул. Строителей, 15</p>
-    </div>
-    <div class="footer-column-2">
-      <ul class="footer-navigation">
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">гарантия</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-      <ul class="footer-social">
-        <li><a class="facebook" href="#"></a></li>
-        <li><a class="instagram" href="#"></a></li>
-        <li><a class="twitter" href="#"></a></li>
-      </ul>
-    </div>
-    <div class="footer-column-3">
-      <ul class="user-navigation user-width">
-        <li class="user-id">
-          <a href="#">Валентин Петухов</a>
-        </li>
-        <li class="user-login">
-          <a href="#">Войти</a>
-        </li>
-      </ul>
-      <span class="user-compare">
-        <a href="#">Сравнить</a>
-      </span>
-      <span class="user-cart">
-        <a href="#">Корзина</a>
-      </span>
-      <p class="footer-tel">
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
-           <a href="https://htmlacademy.ru">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Лого академии">
-        </a>
+        <img class="main-footer-logo" src="img/footer-logo.png" width="163" height="35" alt="Магазин гаджетов DEVICE"></a>
+        <p>г. Москва, ул. Строителей, 15</p>
       </div>
-    </div>
-  </footer>
-</body>
-</html>
+      <div class="footer-column-2">
+        <ul class="footer-navigation">
+          <li><a href="#">доставка</a></li>
+          <li><a href="#">гарантия</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+        <ul class="footer-social">
+          <li><a class="facebook" href="#"></a></li>
+          <li><a class="instagram" href="#"></a></li>
+          <li><a class="twitter" href="#"></a></li>
+        </ul>
+      </div>
+      <div class="footer-column-3">
+        <ul class="user-navigation user-width">
+          <li class="user-id">
+            <a href="#">Валентин Петухов</a>
+          </li>
+          <li class="user-login">
+            <a href="#">Войти</a>
+          </li>
+        </ul>
+        <span class="user-compare">
+          <a href="#">Сравнить</a>
+        </span>
+        <span class="user-cart">
+          <a href="#">Корзина</a>
+        </span>
+        <p class="footer-tel">
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-html.svg" width="27" height="35" alt="Лого академии">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
