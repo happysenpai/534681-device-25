@@ -1174,6 +1174,11 @@ a:visited {
 .popup-map iframe{
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
+.contacts iframe,
+.popup-map iframe{
+border: none;
+
+}
 .popup-map,
 .popup-write-us,
 .catalog-dropdown {
