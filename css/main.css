@@ -1095,8 +1095,9 @@ a:visited {
 }
 
 .footer-column-3 img {
-  margin-left: 313px;
-  margin-top:28px;
+  position: absolute;
+  right: 0;
+  bottom: 26px;
 }
 
 .footer-column-3 .user-compare::before{
@@ -1124,6 +1125,7 @@ a:visited {
 .footer-column-3 .user-width{
   left: -154px;
 }
+
 /*  footer send*/
 
 
