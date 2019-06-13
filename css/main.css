@@ -364,20 +364,8 @@ a:visited {
 
 
 /* button start */
-.button-detailed{
-  position: relative;
-  display: flex;
-  height: 40px;
-  font-family: Gilroy;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2.15px;
-  z-index: 1;
-  text-align: center;
-}
-.button-detailed a{
+
+.button-bg a{
   margin-left: 44px;
   margin-top: 8px;
   opacity: 1;
@@ -396,6 +384,17 @@ a:visited {
   z-index: -1;
 }
 .button-bg{
+  position: relative;
+  display: flex;
+  height: 40px;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  z-index: 1;
+  text-align: center;
   width: 209px;
 }
 .button-bg:hover::after{
