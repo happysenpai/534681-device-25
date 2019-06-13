@@ -188,7 +188,7 @@ a:visited {
 }
 
 .site-header input[type="search"]:hover{
- opacity: 0.6;site-header
+  opacity: 0.6;
 
 }
 .site-header button[type="submit"]{
@@ -202,18 +202,21 @@ a:visited {
   background-color: #000000;
   color:#ffffff;
 }
-.site-header button:focus span{
-  opacity: 0.3;
+.site-header button:active{
+ background-color: #000000;
+ color: rgba(255,255,255,0.3);
+ opacity: 1;
 }
 .site-header input[type="search"]:focus{
   border-bottom: 2px solid #000000;
-  opacity: 1;
 }
 
 .site-header input[type="search"]:focus + button[type="submit"]{
   opacity: 1;
 }
-
+.site-header button:active .site-header input[type="search"]{
+  border-bottom: 2px solid #000000;
+}
 .site-header input[type="search"]:focus .site-search form::before{
   border-bottom: 2px solid #000000;
 
