@@ -717,6 +717,15 @@ a:visited {
   opacity: 0.7;
   z-index: 0;
 }
+.hover-info{
+  display: none;
+  position: absolute;
+  width: 360px;
+  height: 380px;
+  top: 0;
+  left:0;
+  z-index: 1;
+}
 .filter-item:hover .hover-info{
   display: block;
 }
@@ -741,17 +750,6 @@ a:visited {
  opacity: 0.1;
 }
 
-
-}
-.hover-info{
-  display: none;
-  position: absolute;
-  width: 360px;
-  height: 380px;
-  top: 0;
-  left:0;
-  z-index: 1;
-}
 .hover-info a:first-child{
   position: absolute;
   left: 80px;
