@@ -81,6 +81,7 @@ a:visited {
   width: 500px;
   padding-left: 60px;
   height: 186px;
+
 }
 .header-sort-2 {
   display: flex;
@@ -105,7 +106,9 @@ a:visited {
   margin-bottom: 58px;
 }
 .head-navigation ul li {
+  position: relative;
   display: inline-block;
+  z-index: 1;
 }
 .head-navigation ul li:first-child{
   margin-right: 25px;
@@ -149,6 +152,10 @@ a:visited {
 .user-cart::before{
   content: url(../img/cart.svg);
   margin-right: 5px;
+}
+.catalog{
+  position: relative;
+  z-index: 2;
 }
 
 .site-header input[type="search"]{
@@ -622,6 +629,7 @@ a:visited {
 .site-wraper{
   position: relative;
   background: linear-gradient(90deg, rgba(239,239,239,1) 50%, rgba(255,255,255,1) 50%);
+  margin-top: 50px;
 }
 .site-wraper::after{
   position: absolute;
@@ -681,7 +689,7 @@ a:visited {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 72px;
-  margin-top: 69px;
+  margin-top: 75px;
 }
 .arrow-group {
   position: absolute;
@@ -725,7 +733,7 @@ a:visited {
 .filter-item{
   position: relative;
   width: 361px;
-  margin-bottom: 27px;
+  margin-bottom: 38px;
 }
 .filter-item:hover::after{
   position: absolute;
@@ -1149,20 +1157,7 @@ a:visited {
 
 /* popups start*/
 
-.catalog-dropdown{
- left: 0;
- position: absolute;
- top: 169px;
- right: 0;
- display: flex;
- height: 130px;
- background-color: #f7e296;
- width: 1160px;
 
-}
-.catalog-dropdown ul {
-  list-style: none;
-}
 .popup-write-us{
   margin-left: 50%;
   transform: translate(-50%);
@@ -1289,7 +1284,7 @@ a:visited {
 }
 .popup-map,
 .popup-write-us,
-.catalog-dropdown {
+.catalog-dropdown{
   display: none;
 }
 .close {
@@ -1305,17 +1300,44 @@ a:visited {
   cursor: pointer;
 }
 .close:before, .close:after {
-  position: absolute;игеещт
+  position: absolute;
   left: 15px;
   content: ' ';
   height: 16px;
   width: 2px;
   background-color: #333;
+  z-index: 2;
 }
 .close:before {
   transform: rotate(90deg);
 }
-.close:hover ~ body.catalog-dropdown{
-  display: block;
+.close:hover .catalog-dropdown{
+  display: flex;
+}
+
+
+.catalog-dropdown{
+ left: -284px;
+ position: absolute;
+ top: 7px;
+ height: 180px;
+ background-color: #f7e296;
+ width: 1160px;
+ z-index: 1;
+
+
+}
+.catalog-dropdown ul {
+  list-style: none;
+  margin-left: 18px;
+  margin-top: 32px;
+}
+.catalog-dropdown li a {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+
 }
 /* popups ens*/
