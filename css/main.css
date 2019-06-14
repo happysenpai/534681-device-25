@@ -238,7 +238,9 @@ a:visited {
  color: rgba(255,255,255,0.3);
  opacity: 1;
 }
-
+.site-header button:focus{
+  opacity: 1;
+}
 .site-header input[type="search"]:focus + button[type="submit"]{
   opacity: 1;
 }
@@ -1310,8 +1312,8 @@ a:visited {
   border: none;
 
 }
-/* .popup-map,
-.popup-write-us, */
+.popup-map,
+.popup-write-us,
 .catalog-dropdown{
   display: none;
 }
