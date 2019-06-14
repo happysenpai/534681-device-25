@@ -1173,7 +1173,7 @@ a:visited {
 
 .popup-write-us{
   position: fixed;
-  top: 50%;
+  top: 25px;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 960px;
@@ -1288,7 +1288,7 @@ a:visited {
 }
 .popup-map{
   position: fixed;
-  top:50%;
+  top:25px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
