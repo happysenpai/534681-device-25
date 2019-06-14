@@ -497,6 +497,9 @@ a:visited {
 .item-5 a::before{
   content: url(../img/popular-5.svg);
 }
+.item-6 a::before{
+  content: url(../img/popular-6.svg);
+}
 
 .popular-item:hover {
   background-color: #f0c52e;
