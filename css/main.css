@@ -372,14 +372,15 @@ a:visited {
 
 /* button start */
 
-.button-bg a{
+.button-bg{
   margin-left: 44px;
   margin-top: 8px;
   opacity: 1;
 }
 .button-bg::after{
   content: "";
-  top: 0;
+  top: -8px;
+  left: -40px;
   display: block;
   position: absolute;
   width: 209px;
@@ -389,6 +390,7 @@ a:visited {
   transition: all 0.3s;
   border: 0;
   z-index: -1;
+
 }
 .button-bg{
   position: relative;
@@ -407,10 +409,10 @@ a:visited {
   transform: scaleY(1);
   transition: all 0.3s;
 }
-.button-bg:hover a{
+.button-bg:hover{
   opacity: 1;
 }
-.button-bg:active a{
+.button-bg:active{
   opacity: 0.6;
 }
 .button-width__about::after{
@@ -656,12 +658,16 @@ a:visited {
 .filter-menu button{
   border: none;
   background: transparent;
+  text-align: center;
 }
-.filter-menu button span{
-  margin-left: 6px;
+.filter-menu button{
+  margin-left: 37px;
+  margin-top: 8px;
+
 }
 .filter-menu .button-bg::after{
-  margin-left: -42px;
+  top:0;
+  margin-left:0;
   width: 200px;
 }
 .filter-items{
@@ -1299,7 +1305,7 @@ a:visited {
   cursor: pointer;
 }
 .close:before, .close:after {
-  position: absolute;
+  position: absolute;игеещт
   left: 15px;
   content: ' ';
   height: 16px;
@@ -1309,5 +1315,7 @@ a:visited {
 .close:before {
   transform: rotate(90deg);
 }
-
+.close:hover ~ body.catalog-dropdown{
+  display: block;
+}
 /* popups ens*/
