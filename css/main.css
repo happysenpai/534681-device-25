@@ -765,7 +765,7 @@ a:visited {
   z-index: 0;
 }
 .hover-info{
-  display: block;
+  display: none;
   position: absolute;
   width: 360px;
   height: 380px;
