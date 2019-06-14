@@ -181,6 +181,7 @@ a:visited {
 
 
 .header-sort-1 a{
+  left: 60px;
   font-family: Gilroy;
   font-size: 18px;
   font-weight: 800;
@@ -422,7 +423,7 @@ a:visited {
 .button-bg{
   position: relative;
   display: flex;
-   font-family: Gilroy;
+  font-family: Gilroy;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1187,7 +1188,7 @@ a:visited {
   position: fixed;
   top: 30px;
   left: 50%;
-   transform: translate(-50%);
+  transform: translate(-50%);
   width: 960px;
   height: 553px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1330,38 +1331,41 @@ a:visited {
   top: 114px;
   width: 16px;
   height: 16px;
-  opacity: 0.3;
+  opacity: 1;
 }
 .close:hover {
-  opacity: 1;
+  opacity: 0.6;
   cursor: pointer;
 }
 .close:before, .close:after {
   position: absolute;
-  left: 15px;
-  content: ' ';
+  top: 2px;
+  right: -19px;
+  content: "";
   height: 16px;
   width: 2px;
   background-color: #333;
   z-index: 2;
+  opacity: 0.3;
+}
+.close:active {
+  opacity: 0.3;
 }
 .close:before {
   transform: rotate(90deg);
 }
-.close:hover .catalog-dropdown{
+.close:hover + .catalog-dropdown{
   display: flex;
 }
-.catalog .close:hover .catalog-dropdown{
-  display: flex;
-}
+
 .catalog-dropdown{
- left: -284px;
- position: absolute;
- top: 7px;
- height: 180px;
- background-color: #f7e296;
- width: 1160px;
- z-index: 1;
+  position: absolute;
+  left: 0px;
+  bottom: -113px;
+  height: 180px;
+  background-color: #f7e296;
+  width: 1160px;
+  z-index: 1;
 
 
 }
