@@ -1179,10 +1179,10 @@ a:visited {
 
 .popup-write-us{
   position: fixed;
-  top: 310px;
+  top: 30px;
   left: 50%;
   height: 90vh;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%);
   width: 960px;
   height: 553px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1295,9 +1295,8 @@ a:visited {
 }
 .popup-map{
   position: fixed;
-  top: 320px;
+  top: 30px;
   left: 50%;
-  height: 90vh;
   transform: translate(-50%);
   z-index: 1;
 }
@@ -1316,7 +1315,7 @@ a:visited {
 
 }
 .popup-map,
-.popup-write-us,
+/* .popup-write-us, */
 .catalog-dropdown{
   display: none;
 }
