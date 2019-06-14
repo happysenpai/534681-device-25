@@ -81,6 +81,7 @@ a:visited {
   width: 500px;
   padding-left: 60px;
   height: 186px;
+  z-index: 1;
 
 }
 .header-sort-2 {
@@ -160,14 +161,24 @@ a:visited {
 
 .site-header input[type="search"]{
   width: 355px;
-  background-color: #f7e296;
+  background-color: transparent;
   border:none;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
-
 }
+/* clears the 'X' from Internet Explorer */
+.site-header input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+.site-header input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+.site-header input[type="search"]::-webkit-search-decoration,
+.site-header input[type="search"]::-webkit-search-cancel-button,
+.site-header input[type="search"]::-webkit-search-results-button,
+.site-header input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
 .header-sort-1 a{
   font-family: Gilroy;
   font-size: 18px;
@@ -199,11 +210,22 @@ a:visited {
 
 }
 .site-header button[type="submit"]{
+  position: relative;
   width: 85px;
   height: 49px;
   border: 2px solid #000000;
   background-color: #f7e296;
   opacity: 0;
+}
+.site-header button[type="submit"]::before{
+  position: absolute;
+  bottom: -2px;
+  left: -396px;
+  content: "";
+  height: 2px;
+  width: 394px;
+  background-color: #000000;
+
 }
 .site-header button:hover{
   background-color: #000000;
@@ -214,20 +236,11 @@ a:visited {
  color: rgba(255,255,255,0.3);
  opacity: 1;
 }
-.site-header input[type="search"]:focus{
-  border-bottom: 2px solid #000000;
-}
 
 .site-header input[type="search"]:focus + button[type="submit"]{
   opacity: 1;
 }
-.site-header button:active .site-header input[type="search"]{
-  border-bottom: 2px solid #000000;
-}
-.site-header input[type="search"]:focus .site-search form::before{
-  border-bottom: 2px solid #000000;
 
-}
 /* Header end*/
 
 
@@ -1159,11 +1172,15 @@ a:visited {
 
 
 .popup-write-us{
+  position: absolute;
+  top: 1015px;
   margin-left: 50%;
   transform: translate(-50%);
   width: 960px;
   height: 553px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  z-index: 1;
+  background-color: white;
 }
 .popup-write-us form {
   position: relative;
@@ -1270,12 +1287,19 @@ a:visited {
   line-height: 24px;
 }
 .popup-map{
-  position: relative;
+  position: absolute;
+  bottom: 415px;
   margin-left: 50%;
   transform: translate(-50%);
+  z-index: 1;
 }
 .popup-map iframe{
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+.popup-map .button-close{
+  position: absolute;
+  top: 21px;
+  right: 21px;
 }
 .contacts iframe,
 .popup-map iframe{
