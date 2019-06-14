@@ -1172,10 +1172,10 @@ a:visited {
 
 
 .popup-write-us{
-  position: absolute;
-  top: 1015px;
-  margin-left: 50%;
-  transform: translate(-50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 960px;
   height: 553px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1287,10 +1287,10 @@ a:visited {
   line-height: 24px;
 }
 .popup-map{
-  position: absolute;
-  bottom: 415px;
-  margin-left: 50%;
-  transform: translate(-50%);
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 .popup-map iframe{
@@ -1306,8 +1306,8 @@ a:visited {
   border: none;
 
 }
-.popup-map,
-.popup-write-us,
+/* .popup-map,
+.popup-write-us, */
 .catalog-dropdown{
   display: none;
 }
