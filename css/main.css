@@ -1181,8 +1181,7 @@ a:visited {
   position: fixed;
   top: 30px;
   left: 50%;
-  height: 90vh;
-  transform: translate(-50%);
+   transform: translate(-50%);
   width: 960px;
   height: 553px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
