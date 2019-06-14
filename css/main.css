@@ -750,7 +750,7 @@ a:visited {
 .filter-item:hover .hover-info{
   display: block;
 }
-.filter-item:nth-child(4)::before{
+.new-item::before{
   top: 21px;
   right: 28px;
   content: "NEW";
