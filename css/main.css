@@ -1174,8 +1174,9 @@ a:visited {
 
 .popup-write-us{
   position: fixed;
-  top: 25px;
+  top: 310px;
   left: 50%;
+  height: 90vh;
   transform: translate(-50%,-50%);
   width: 960px;
   height: 553px;
@@ -1289,8 +1290,9 @@ a:visited {
 }
 .popup-map{
   position: fixed;
-  top:25px;
+  top:top: 320px;
   left: 50%;
+  height: 90vh;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -1301,6 +1303,7 @@ a:visited {
   position: absolute;
   top: 21px;
   right: 21px;
+
 }
 .contacts iframe,
 .popup-map iframe{
