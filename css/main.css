@@ -480,26 +480,26 @@ a:visited {
 
 }
 .popular-item a::before{
-  content: url(../img/popular-1.svg);
+  content: url(../img/popular-1.png);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .item-2 a::before{
-  content: url(../img/popular-2.svg);
+  content: url(../img/popular-2.png);
 }
 .item-3 a::before{
-  content: url(../img/popular-3.svg);
+  content: url(../img/popular-3.png);
 }
 .item-4 a::before{
-  content: url(../img/popular-4.svg);
+  content: url(../img/popular-4.png);
 }
 .item-5 a::before{
-  content: url(../img/popular-5.svg);
+  content: url(../img/popular-5.png);
 }
 .item-6 a::before{
-  content: url(../img/popular-6.svg);
+  content: url(../img/popular-6.png);
 }
 
 .popular-item:hover {
