@@ -64,6 +64,7 @@ a:visited {
 }
 .auto-width{
   max-width: 1160px;
+  min-width: 1160px;
   margin: 0 auto;
 }
 /* Header start*/
