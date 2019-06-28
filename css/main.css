@@ -168,6 +168,8 @@ a:visited {
 
   .site-header input[type="search"]{
     width: 355px;
+    margin-top: -2px;
+    margin-left: 37px;
     background-color: transparent;
     border:none;
     font-size: 15px;
@@ -202,6 +204,9 @@ a:visited {
  }
  .site-header form::before {
   content: url(../img/search.svg);
+  position: absolute;
+  left: 62px;
+  top: 46px;
   width:16px;
   padding-right: 21px;
   align-self: flex-end;
