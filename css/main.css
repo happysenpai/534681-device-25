@@ -417,7 +417,7 @@ a:visited {
 .slider-table td:nth-child(2)  {
   width: 135px;
 }
-.slider-table  tr:first-child{
+.slider-table  tr:nth-child(1){
   font-family: Gilroy, Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
@@ -425,7 +425,7 @@ a:visited {
   letter-spacing: 0.36px;
 
 }
-.slider-table  tr:last-child{
+.slider-table  tr:nth-child(2){
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
