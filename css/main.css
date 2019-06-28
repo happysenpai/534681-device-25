@@ -315,26 +315,22 @@ a:visited {
 
 }
 #slider-btn-1:checked ~ .slider-item {
-display: flex;
+  transform: translateX(0);
+  -ms-transform: translateX(0);
 }
-#slider-btn-1 ~ .slider-item {
-display: none;
-}
+
 #slider-btn-2:checked ~ .slider-item {
-display: flex;
+  transform: translateX(-1180px);
+  -ms-transform: translateX(-1180px);
 }
-#slider-btn-2 ~ .slider-item {
-display: none;
-}
+
 #slider-btn-3:checked ~ .slider-item {
-display: flex;
-}
-#slider-btn-3 ~ .slider-item {
-display: none;
+  transform: translateX(-2360px);
+  -ms-transform: translateX(-2360px);
 }
 /* slider items strart */
 .slider-item{
-  display: none;
+  display: flex;
   margin-left: 90px;
   margin-right: 90px;
 }
@@ -348,7 +344,6 @@ display: none;
   position: relative;
   margin-left: 125px;
 }
-
 .slider-info h2 {
   position: relative;
   font-family: Gilroy, Arial, sans-serif;
