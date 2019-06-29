@@ -1312,6 +1312,41 @@ a:visited {
  margin-top: 44px;
  border-right: 7px solid black;
 }
+#services-btn-1:checked ~ .slider-controls label[for="services-btn-1"]{
+color: #f0c52e;
+}
+#services-btn-1:checked ~ .slider-controls label[for="services-btn-1"]:after{
+ background-color: #000000;
+ transform: scale(1);
+ width: 277px;
+}
+#services-btn-2:checked ~ .slider-controls label[for="services-btn-2"]{
+color: #f0c52e;
+}
+#services-btn-2:checked ~ .slider-controls label[for="services-btn-2"]:after{
+ background-color: #000000;
+ transform: scale(1);
+ width: 277px;
+}
+#services-btn-3:checked ~ .slider-controls label[for="services-btn-3"]{
+color: #f0c52e;
+}
+#services-btn-3:checked ~ .slider-controls label[for="services-btn-3"]:after{
+ background-color: #000000;
+ transform: scale(1);
+ width: 277px;
+}
+#services-btn-1:checked ~ .services-slide.services-delivery {
+  display: block;
+}
+
+#services-btn-2:checked ~ .services-slide.services-warranty {
+  display: block;
+}
+
+#services-btn-3:checked ~ .services-slide.services-credit {
+  display: block;
+}
 .services .button-bg::after {
   width: 160px;
   left: -2px;
@@ -1328,14 +1363,6 @@ a:visited {
   background-color: #000000;
   width: 280px;
   height: 40px;
-}
-.services .button-active{
- color: #f0c52e;
-}
-.services .button-active:after{
- background-color: #000000;
- transform: scale(1);
- width: 277px;
 }
 .services-slide{
   position: relative;
@@ -1366,7 +1393,7 @@ a:visited {
   display: none;
 }
 .services-slide.services-delivery {
-  display: block;
+  display: none;
 }
 .services-credit::after{
   content: url(../img/services-credit.png);
