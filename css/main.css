@@ -1043,6 +1043,13 @@ a:visited {
 }
 .arrow-group a {
   padding-right: 10px;
+  opacity: 0.2;
+}
+.arrow-group a:hover {
+  opacity: 0.4;
+}
+.arrow-group a:active {
+  opacity: 1;
 }
 .filter-sort-wraper{
   position: relative;
