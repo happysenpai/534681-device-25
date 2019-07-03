@@ -272,56 +272,53 @@ a:visited {
   display: none;
 }
 .slider-controls {
-  bottom: 142px;
+  bottom: 138px;
   position: absolute;
-  right: 64px;
+  right: 112px;
 
 }
 
-.slider .slider-controls label {
+.slider .slider-controls label{
   position: relative;
   display: inline-block;
-  margin-right: 25px;
-  width: 1px;
-  height: 1px;
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: #ffffff;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  transition: background-color 0.2s;
-  z-index: 2;
-
-}
-.slider .slider-controls label::before{
-  content: "";
-  position: absolute;
+  margin-right: 19px;
   top: 50%;
   left: 50%;
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border: 1px solid white;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
-  transform: translate(-50%,-50%);
   z-index: 1;
 }
-#slider-btn-1:checked ~ .slider-controls label[for="slider-btn-1"],
-#slider-btn-2:checked ~ .slider-controls label[for="slider-btn-2"],
-#slider-btn-3:checked ~ .slider-controls label[for="slider-btn-3"] {
- box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
+
+#slider-btn-1:checked ~ .slider-controls label[for="slider-btn-1"]::after,
+#slider-btn-2:checked ~ .slider-controls label[for="slider-btn-2"]::after,
+#slider-btn-3:checked ~ .slider-controls label[for="slider-btn-3"]::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 2px;
+  height: 2px;
+  border: 1px solid #191818;
+  border-radius: 50%;
+  background-color: #fbfbfb;
+  box-shadow: 0 0 0 0 rgba(255, 251, 251, 0.8);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 2;
 
 }
-#slider-btn-1:checked ~ .slide-display-1 {
+#slider-btn-1:checked ~ .slide-display-1{
+  display: flex;
+
+}
+#slider-btn-2:checked ~ .slide-display-2{
   display: flex;
 }
-
-#slider-btn-2:checked ~ .slide-display-2 {
-  display: flex;
-}
-
 #slider-btn-3:checked ~ .slide-display-3 {
   display: flex;
 }
@@ -679,19 +676,17 @@ a:visited {
   margin-bottom: 82px;
 
 }
-.partners-item img{
-  -webkit-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-  opacity: 0.2;
+.partners-item-1 img:hover{
+  background-image:url(../img/credit_active-1.png);
 }
-.partners-item img:hover{
-  -webkit-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  filter: grayscale(0%);
-  filter: gray;
-  opacity: 1;
+.partners-item-2 img:hover{
+  background-image:url(../img/credit_active-2.png);
+}
+.partners-item-3 img:hover{
+  background-image:url(../img/credit_active-3.png);
+}
+.partners-item-4 img:hover{
+  background-image:url(../img/credit_active-4.png);
 }
 /* partners end */
 
