@@ -388,6 +388,8 @@ a:visited {
 }
 .first-slide::before{
   content: "01";
+  right: -8px;
+  top: -14px;
 
 }
 .second-slide::before{
@@ -873,8 +875,8 @@ a:visited {
   color: rgba(0, 0, 0, 0.2);
 }
 .filter-range-price {
-    height: 36px;
-  }
+  height: 36px;
+}
 /* range-slider end */
 .filter-menu{
   position: relative;
