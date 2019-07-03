@@ -196,6 +196,13 @@ a:visited {
   line-height: 24px;
   letter-spacing: 3.6px;
   width: 222px;
+  cursor: pointer;
+}
+.header-sort-1 a:hover{
+  opacity: 0.6
+}
+.header-sort-1 a:active{
+  opacity: 0.3
 }
 .site-header form{
  display: flex;
@@ -966,6 +973,15 @@ a:visited {
   border-radius: 50%;
   background: #000000;
 }
+.filter-menu .checkbox-checkmark:hover,
+.filter-menu .radio-checkmark:hover{
+  opacity: 0.6;
+}
+.radio-container input:disabled ~ .radio-checkmark,
+.checkbox-container input:disabled ~ .checkbox-checkmark{
+  opacity: 0.25;
+
+}
 .filter-menu h2{
  position: relative;
  padding-top: 21px;
@@ -1521,7 +1537,12 @@ a:visited {
   right: 0;
   bottom: 23px;
 }
-
+.footer-column-3 img:hover {
+  opacity: 0.6;
+}
+.footer-column-3 img:active {
+  opacity: 0.3;
+}
 .footer-column-3 .user-compare::before{
   content: url(../img/footer-compare.svg);
   margin-right: 5px;
