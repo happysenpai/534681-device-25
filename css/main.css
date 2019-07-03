@@ -773,6 +773,7 @@ a:visited {
 /* range-slider */
 
 .filter-range {
+  position: relative;
   margin-top: 74px;
 }
 .filter-range h3 {
@@ -792,33 +793,55 @@ a:visited {
   width: 200px;
   border-top: 2px solid black;
 }
-.filter-range input[type=range] {
-  -webkit-appearance: none;
-  width: 200px;
-  background: transparent;
-  height: 25px;
-  margin-top: 3px;
+/* .range-2::before {
+  content: "";
+  position: absolute;
+  top: 61px;
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  border: 8px solid white;
+  background-color: #ababab;
+  cursor: pointer;
+  box-shadow: 0px 1px 0px 0px rgba(219,219,219,1);
+}
+.range-2::after{
+  content: "от 0";
+  position: absolute;
+  top: 77px;
+  left: -1px;
+  } */
+  .filter-range input[type=range] {
+    position: absolute;
+    -webkit-appearance: none;
+    width: 200px;
+    background: transparent;
+    height: 25px;
+    margin-top: 3px;
+    z-index: 1;
 
-}
 
-.filter-range input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-
-.filter-range input[type=range]:focus {
-  outline: none;
-}
-.filter-range input[type=range]:active::-webkit-slider-thumb {
- height: 22px;
- width: 22px;
- border-radius: 50%;
- border: 9px solid white;
- background-color: #ababab;
- cursor: pointer;
- margin-top: -10px;
- box-shadow: 0px 1px 0px 0px rgba(219,219,219,1);
-}
-.filter-range input[type=range]:active::-moz-range-thumb  {
+  }
+  .filter-range input[type=range]::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    z-index: 1;
+  }
+  .filter-range input[type=range]:focus {
+    outline: none;
+  }
+  .filter-range input[type=range]:active::-webkit-slider-thumb {
+   height: 22px;
+   width: 22px;
+   border-radius: 50%;
+   border: 9px solid white;
+   background-color: #ababab;
+   cursor: pointer;
+   margin-top: -10px;
+   box-shadow: 0px 1px 0px 0px rgba(219,219,219,1);
+ }
+ .filter-range input[type=range]:active::-moz-range-thumb  {
   border: 12px solid white;
 }
 .filter-range input[type=range]:active::-ms-thumb {
@@ -943,7 +966,7 @@ a:visited {
 .checkbox-container{
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 38px;
   margin-bottom: 10px;
   cursor: pointer;
   font-size: 14px;
