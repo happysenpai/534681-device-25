@@ -552,14 +552,19 @@ a:visited {
 
 .popular-item:hover {
   background-color: #f0c52e;
-}
-.popular-item:hover a {
   opacity: 1;
 }
-.popular-item:active a:before,
-.popular-item:active h2 {
-  opacity: 0.3;
+.popular-item:hover h2  {
+   opacity: 1;
 }
+.popular-item:hover a  {
+   opacity: 1;
+}
+.popular-item:active h2,
+.popular-item:active a  {
+   opacity: 0.3;
+}
+
 /* popular section end*/
 
 /* info section start*/
@@ -1442,6 +1447,13 @@ a:visited {
   height: 7px;
   content: "";
   background-color: #ffc600;
+}
+.main-footer-logo:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.main-footer-logo:active {
+  opacity: 0.3;
 }
 .footer-column-2{
  width: 430px;
