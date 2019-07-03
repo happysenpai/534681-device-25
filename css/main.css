@@ -980,6 +980,10 @@ a:visited {
 .filter-menu .radio-checkmark:hover{
   opacity: 0.6;
 }
+.filter-menu .checkbox-checkmark:active,
+.filter-menu .radio-checkmark:active{
+  opacity: 1;
+}
 .radio-container input:disabled ~ .radio-checkmark,
 .checkbox-container input:disabled ~ .checkbox-checkmark{
   opacity: 0.25;
