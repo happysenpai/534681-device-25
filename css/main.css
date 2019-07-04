@@ -54,6 +54,7 @@ a:active {
 a:visited {
   color: #000000;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -289,7 +290,7 @@ a:visited {
 .slider label{
   position: relative;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   margin-right: 19px;
   top: 50%;
   left: 50%;
@@ -528,26 +529,26 @@ a:visited {
   margin-top: 193px;
 
 }
-.popular-item a::before{
+.popular-item::before{
   content: url(../img/popular-1.png);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.item-2 a::before{
+.item-2::before{
   content: url(../img/popular-2.png);
 }
-.item-3 a::before{
+.item-3::before{
   content: url(../img/popular-3.png);
 }
-.item-4 a::before{
+.item-4::before{
   content: url(../img/popular-4.png);
 }
-.item-5 a::before{
+.item-5::before{
   content: url(../img/popular-5.png);
 }
-.item-6 a::before{
+.item-6::before{
   content: url(../img/popular-6.png);
 }
 
@@ -558,11 +559,11 @@ a:visited {
 .popular-item:hover h2  {
  opacity: 1;
 }
-.popular-item:hover a  {
+.popular-item:hover  {
  opacity: 1;
 }
 .popular-item:active h2,
-.popular-item:active a  {
+{
  opacity: 0.3;
 }
 
@@ -573,6 +574,7 @@ a:visited {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: -13px;
 }
 .info h2 {
   font-family: Gilroy, Arial, sans-serif;
@@ -1177,6 +1179,7 @@ a:visited {
 .item-price::first-letter{
   margin-right: 5px;
 }
+
 /* pagination start */
 .pagination{
   position: relative;
@@ -1575,13 +1578,43 @@ a:visited {
 
 
 /* popups start*/
+/* animation */
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
 
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .popup-write-us{
   position: fixed;
   top: 30px;
-  left: 50%;
-  transform: translate(-50%);
+  left: 352px;
   width: 960px;
   height: 553px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1667,9 +1700,7 @@ a:visited {
   opacity: 0.5;
 
 }
-.popup-write-us input:invalid{
-  background: #f6dada;
-}
+
 .popup-write-us textarea {
   background-color: #f2f2f2;
   opacity: 0.5;
@@ -1699,8 +1730,8 @@ a:visited {
 .popup-map{
   position: fixed;
   top: 30px;
-  left: 50%;
-  transform: translate(-50%);
+  left: 21%;
+
   z-index: 1;
 }
 .popup-map iframe{
@@ -1729,6 +1760,15 @@ a:visited {
 }
 .popup-show{
   display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+.modal-error input,
+.modal-error textarea {
+  background: #f6dada;
+
 }
 .close {
   position: absolute;
@@ -1790,3 +1830,4 @@ a:visited {
 
 }
 /* popups ens*/
+
