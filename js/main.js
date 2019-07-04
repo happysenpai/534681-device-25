@@ -8,8 +8,8 @@ form             = popcontact.querySelector("form");
 fname             = popcontact.querySelector("#user-name");
 email            = popcontact.querySelector("#user-email");
 textarea         = popcontact.querySelector("#user-msg");
-  var isStorageSupport = true;
-  var storage = "";
+isStorageSupport = true;
+storage = "";
 
   try {
     storage = localStorage.getItem("fname");
@@ -82,7 +82,7 @@ form.addEventListener("submit", function (evt) {
       if (isStorageSupport) {
         localStorage.setItem("fname", fname.value);
         localStorage.setItem("email", email.value);
-        localStorage.setItem("textarea", email.value);
+        localStorage.setItem("textarea", textarea.value);
 
       }
     }

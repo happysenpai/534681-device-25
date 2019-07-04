@@ -1665,6 +1665,23 @@ a:visited {
   opacity: 0.5;
   z-index: 2;
 }
+
+.button-close:before, .button-close:after {
+  position: absolute;
+  top: 12px;
+  right: 26px;
+  content: "";
+  height: 32px;
+  width: 3px;
+  background-color: #fff;
+
+}
+.button-close:before{
+transform: rotate(50deg);
+}
+.button-close:after{
+  transform: rotate(-50deg);
+}
 .button-close:hover{
   opacity: 1;
 }
