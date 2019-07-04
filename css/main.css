@@ -109,15 +109,16 @@ a:visited {
   letter-spacing: 3.6px;
   margin-bottom: 58px;
 }
-.head-navigation ul li {
+.head-navigation li {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   z-index: 1;
 }
-.head-navigation ul li:first-child{
+.head-navigation li:first-child{
   margin-right: 25px;
 }
-.head-navigation ul li:last-child{
+.head-navigation li:last-child{
  margin-left: 101px;
 }
 .user-id{
@@ -138,8 +139,9 @@ a:visited {
   margin-right: 63px;
   width: 225px;
 }
-.header-sort-2 .user-navigation li{
+.user-navigation li{
   display: inline-block;
+  vertical-align: top;
 }
 .user-login::before{
   content: url(../img/user.svg);
@@ -152,7 +154,7 @@ a:visited {
 }
 .user-compare::before{
   content: url(../img/compare.svg);
-  margin-right: 5px;
+  margin-right: 10px;
 
 }
 .header-sort-2 .user-compare{
@@ -160,7 +162,7 @@ a:visited {
 }
 .user-cart::before{
   content: url(../img/cart.svg);
-  margin-right: 5px;
+  margin-right: 11px;
 }
 .catalog{
   position: relative;
@@ -282,12 +284,12 @@ a:visited {
   bottom: 138px;
   position: absolute;
   right: 112px;
-
 }
 
-.slider .slider-controls label{
+.slider label{
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin-right: 19px;
   top: 50%;
   left: 50%;
@@ -341,7 +343,6 @@ a:visited {
   display: none;
 }
 .slider-item{
-
   margin-left: 90px;
   margin-right: 90px;
 }
@@ -391,13 +392,11 @@ a:visited {
   font-weight: 800;
   line-height: 179.2px;
   letter-spacing: 0.36px;
-
 }
 .first-slide::before{
   content: "01";
   right: -8px;
   top: -14px;
-
 }
 .second-slide::before{
   content: "02";
@@ -446,15 +445,10 @@ a:visited {
   line-height: 26px;
   letter-spacing: 0.13px;
   margin-right: 0;
-
 }
-
-/* slider items strart */
 /* Slider end*/
 
-
 /* button start */
-
 .button-bg{
   margin-left: 44px;
   margin-top: 8px;
@@ -511,10 +505,10 @@ a:visited {
 }
 /* button end */
 
-
 /* popular section start*/
 .popular {
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-between;
   margin-top: 107px;
 }
@@ -525,7 +519,7 @@ a:visited {
   background-color: #f7e296;
 
 }
-.popular-item a h2{
+.popular-item h2{
   font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -572,9 +566,6 @@ a:visited {
  opacity: 0.3;
 }
 
-.popular-item:active a h2 {
- opacity: 0.3;
-}
 /* popular section end*/
 
 /* info section start*/
@@ -625,7 +616,14 @@ a:visited {
   width: 465px;
   letter-spacing: -0.2px;
 }
-.about ul li{
+.about ul{
+  position: relative;
+  list-style: none;
+  margin-left: -23px;
+  margin-bottom: 62px;
+}
+
+.about li{
   position: relative;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
@@ -633,13 +631,7 @@ a:visited {
   line-height: 40px;
   padding-left: 17px;
 }
-.about ul{
-  position: relative;
-  list-style: none;
-  margin-left: -23px;
-  margin-bottom: 62px;
-}
-.about ul li::before{
+.about li::before{
   content: "";
   position: absolute;
   top: 18px;
@@ -689,6 +681,7 @@ a:visited {
 .partners{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 93px;
   margin-bottom: 82px;
 
@@ -714,8 +707,9 @@ a:visited {
 .breadcrumbs-wraper ul{
   padding-left: 59px;
 }
-.breadcrumbs-wraper ul li{
+.breadcrumbs-wraper li{
   display: inline-block;
+  vertical-align: top;
   margin-left: 0;
 }
 .breadcrumbs-wraper h1 {
@@ -742,14 +736,14 @@ a:visited {
 .breadcrumbs li:last-child::after{
   content: none;
 }
-.breadcrumbs li a{
+.breadcrumbs a{
   opacity: 0.3;
   font-size: 14px;
 }
-.breadcrumbs li a:hover{
+.breadcrumbs a:hover{
   opacity: 0.6;
 }
-.breadcrumbs li a:active{
+.breadcrumbs a:active{
   opacity: 0.1;
 }
 
@@ -804,12 +798,10 @@ a:visited {
 
 .range-filter {
   position:relative;
-
 }
 
 .filter-item legend {
   position:relative;
-
   font-family: "Gilroy", Arial , sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -915,8 +907,6 @@ a:visited {
  height: 0;
  width: 0;
 }
-
-
 .checkbox-checkmark {
   position: absolute;
   top: 0;
@@ -1073,8 +1063,9 @@ a:visited {
   margin-left: 50px;
 
 }
-.filter-sort-wraper ul li{
+.filter-sort-wraper li{
   display: inline-block;
+  vertical-align: top;
   margin-right: 22px;
   opacity: 0.3;
 
@@ -1129,14 +1120,11 @@ a:visited {
 
 .hover-info a:first-child{
   position: absolute;
-  left: 80px;
+  left: 79px;
   top: 171px;
   z-index: 1;
 }
-.hover-info a:first-child span{
-  margin-left: 43px;
 
-}
 .hover-info .button-bg{
   padding-top: 8px;
 }
@@ -1165,7 +1153,7 @@ a:visited {
 .hover-info a:last-child:active{
   opacity: 0.2;
 }
-.filter-item .item-title h2{
+.item-title h2{
  font-family: Gilroy, Arial, sans-serif;
  font-size: 18px;
  font-weight: 800;
@@ -1204,8 +1192,9 @@ a:visited {
   width: inherit;
   padding: 0;
 }
-.pagination ul li{
+.pagination li{
   display: inline-block;
+  vertical-align: baseline;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -1232,7 +1221,7 @@ a:visited {
 }
 
 
-.pagination ul li:nth-child(2){
+.pagination li:nth-child(2){
  margin-left: 309px;
  margin-top: 10px;
 
@@ -1299,7 +1288,7 @@ a:visited {
   max-width: 1160px;
 }
 
-.services .slider-controls label {
+.services label {
   display: block;
   width: 160px;
   height: 0;
@@ -1314,10 +1303,10 @@ a:visited {
   letter-spacing: 3.5px;
   box-shadow: 0 0 0 0;
 }
-.services .slider-controls label:hover{
+.services label:hover{
   cursor: pointer;
 }
-.services .slider-controls label:first-child{
+.services label:first-child{
   margin-top: 86px;
 }
 .services input[type="radio"] {
@@ -1327,8 +1316,8 @@ a:visited {
  position: relative;
  width: 277px;
  height: 317px;
- margin-left: 63px;
- margin-top: 44px;
+ margin-left: 113px;
+ margin-top: 41px;
  border-right: 7px solid black;
 }
 #services-btn-1:checked ~ .slider-controls label[for="services-btn-1"]{
@@ -1389,18 +1378,18 @@ a:visited {
 
 }
 .services-slide h2{
-  margin-top: -28px;
-  margin-left: 55px;
-  font-family: Gilroy, Arial, sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  line-height: 48px;
-  letter-spacing: 0.7px;
+ margin-top: -25px;
+ margin-left: 6px;
+ font-family: Gilroy, Arial, sans-serif;
+ font-size: 47px;
+ font-weight: 800;
+ line-height: 48px;
+ letter-spacing: 0.7px;
 }
 .services-slide p {
   color: #464646;
   width: 460px;
-  margin-left: 49px;
+  margin-left: 3px;
   margin-top: -8px;
   letter-spacing: 0.35px;
 
@@ -1418,25 +1407,25 @@ a:visited {
   content: url(../img/services-credit.png);
   position: absolute;
   top: -39px;
-  right: 31px;
+  right: 66px;
 }
 .services-delivery::after{
   content: url(../img/services-delivery.png);
   position: absolute;
-  top: -16px;
-  right: 16px;
+  top: -13px;
+  right: 62px;
 }
 .services-warranty::after{
   content: url(../img/services-warranty.png);
   position: absolute;
   top: -39px;
-  right: 8px;
+  right: 41px;
 }
 /* services section end */
 /*  footer start */
 .footer-wraper {
   background-color: #464646;
-  margin-top: 1px;
+  margin-top: 8px;
   min-width: 1160px;
 }
 .site-footer{
@@ -1451,8 +1440,9 @@ a:visited {
 .site-footer a{
   color:#ffffff;
 }
-.site-footer ul li{
+.site-footer li{
   display: inline-block;
+  vertical-align: top;
 }
 .footer-column-1{
   position: relative;
@@ -1487,7 +1477,7 @@ a:visited {
   margin-top: 68px;
   padding-left: 0;
 }
-.footer-navigation li a{
+.footer-navigation a{
   font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1661,6 +1651,7 @@ a:visited {
  width: 340px;
  height: 48px;
  display: inline-block;
+ vertical-align: top;
  background-color: #f2f2f2;
  border:none;
  opacity: 0.5;
@@ -1790,7 +1781,7 @@ a:visited {
   margin-left: 18px;
   margin-top: 32px;
 }
-.catalog-dropdown li a {
+.catalog-dropdown a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
