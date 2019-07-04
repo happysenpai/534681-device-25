@@ -72,7 +72,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!fname.value || !email.value) {
+  if (!fname.value || !email.value || !textarea.value) {
     evt.preventDefault();
     popcontact.classList.remove("modal-error");
     popcontact.offsetWidth = popcontact.offsetWidth;
