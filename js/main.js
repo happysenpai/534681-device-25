@@ -8,16 +8,7 @@ form             = popcontact.querySelector("form");
 fname             = popcontact.querySelector("#user-name");
 email            = popcontact.querySelector("#user-email");
 textarea         = popcontact.querySelector("#user-msg");
-isStorageSupport = true;
-storage = "";
 
-  try {
-    storage = localStorage.getItem("fname");
-    storage = localStorage.getItem("email");
-    storage = localStorage.getItem("textarea");
-  } catch (err) {
-    isStorageSupport = false;
-  }
 
 maplink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -28,15 +19,6 @@ maplink.addEventListener("click", function (evt) {
 contactlink.addEventListener("click", function (evt) {
   evt.preventDefault();
   popcontact.classList.add("popup-show");
-  if (storage) {
-      fname.value = storage;
-      email.value = storage;
-      textarea.value = storage;
-      textarea.focus();
-    } else {
-      fname.focus();
-    }
-
   console.log("открыли форму");
 });
 
@@ -78,12 +60,5 @@ form.addEventListener("submit", function (evt) {
     popcontact.offsetWidth = popcontact.offsetWidth;
     popcontact.classList.add("modal-error");
     console.log("Нужно ввести имя, пчтовый адрес и описание");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("fname", fname.value);
-        localStorage.setItem("email", email.value);
-        localStorage.setItem("textarea", textarea.value);
-
-      }
     }
   });
