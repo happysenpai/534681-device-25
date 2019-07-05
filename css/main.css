@@ -276,6 +276,7 @@ a:visited {
   position: relative;
   margin-top: -112px;
   overflow: hidden;
+  margin-bottom: -88px;
 
 }
 .slider input[type="radio"] {
@@ -518,6 +519,7 @@ a:visited {
   width: 160px;
   height: 160px;
   background-color: #f7e296;
+  margin-top: 88px;
 
 }
 .popular-item h2{
@@ -559,14 +561,18 @@ a:visited {
 .popular-item:hover h2  {
  opacity: 1;
 }
-.popular-item:hover  {
- opacity: 1;
-}
-.popular-item:active h2,
+.popular-item:active h2
 {
  opacity: 0.3;
 }
-
+.popular-item:active::before,
+.popular-item.item-2:active::before,
+.popular-item.item-3:active::before,
+.popular-item.item-4:active::before,
+.popular-item.item-5:active::before,
+.popular-item.item-6:active::before{
+  opacity: 0.3;
+}
 /* popular section end*/
 
 /* info section start*/
